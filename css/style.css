@@ -22,7 +22,7 @@ body a{
 }
 .logo{
 	/*float: left;*/
-	position: fixed;
+	position: absolute;
 	/*margin-top: 0.2em; */
 
 }
