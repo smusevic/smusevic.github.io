@@ -1,52 +1,383 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<script type="text/javascript" src="tools/cufon-yui.js"></script>
-<script type="text/javascript" src="tools/Abraham_Lincoln_400.font.js"></script>
-<script type="text/javascript" src="tools/Inspiration_400.font.js"></script>
-<script type="text/javascript" src="tools/Museo_Slab_100_400-Museo_Slab_700_400.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('.logo h1', {fontFamily: 'Inspiration'});
-	Cufon.replace('.logo h2', {fontFamily: 'Museo Slab 100'});
-	Cufon.replace('.logo h2 span', {fontFamily: 'Abraham Lincoln'});
-	Cufon.replace('p.big_text, p.small_text', {fontFamily: 'Museo Slab 100'});
-	Cufon.replace('p.big_text strong, p.small_text strong', {fontFamily: 'Museo Slab 700'});
-</script>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Zoo-Ed</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="tools/cufon-yui.js"></script>
+		<script type="text/javascript" src="tools/Inspiration_400.font.js"></script>
+		<script type="text/javascript" src="tools/Museo_Slab_100_400-Museo_Slab_700_400.font.js"></script>
+		<script type="text/javascript">
+			Cufon.replace('.logo h1', {fontFamily: 'Inspiration'});
+			Cufon.replace('.top-nav ul li a', {fontFamily: 'Museo Slab 700'});
+			Cufon.replace('.slide-text-info h1', {fontFamily: 'Museo Slab 700'});
+			Cufon.replace('.slide-text-info label', {fontFamily: 'Museo Slab 700'});
+			Cufon.replace('.container p', {fontFamily: 'Museo Slab 100'});
+			Cufon.replace('.container h2', {fontFamily: 'Museo Slab 700'});
+			Cufon.replace('.container h3', {fontFamily: 'Museo Slab 700'});
 
-
-</head>
-<body>
-<div id="transy">
-</div>
-<div id="wrapper">
-	<div class="logo"><h1>zoo-ed</h1><h2><strong class="one"></strong>animals <span>&amp;</span> education<strong class="two"></strong></h2></div>
-	<div class="content">
-		<p class="big_text"><strong>we are working on something</strong> very interesting!</p>
-		<p class="small_text"><strong>please email <a href="mailto:info@zoo-ed.org?Subject=Enquiry">info@zoo-ed.org</a> for details.</strong></p>
-		<!--
-		<div class="form">
-			<div class="field_content">
-				<input class="field" type="text"  />
-				<input class="submit" type="button" value="" />
+			
+		</script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<h1>zoo-ed</h1>
+							<!--<a href="#">Zoo-Ed</a>-->
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#about" class="scroll">A Little Bit About Us</a></li>
+								<li><a href="#team-animals" class="scroll">Meet The Animals</a></li>
+ 								<li><a href="#team" class="scroll">Meet The Humans</a></li>
+								<li><a href="#services" class="scroll">What We Do</a></li>
+								<li><a href="#contact" class="scroll">Get In Touch</a></li>								
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
 			</div>
-		</div>
-	-->
-		<div class="clear"></div>
-		<!--
-		<ul class="social">
-			<li class="pinterest"><a href="#"></a></li>
-			<li class="instagram"><a href="#"></a></li>
-			<li class="twitter"><a href="#"></a></li>
-			<li class="facebook"><a href="#"></a></li>
-		</ul>
-	-->
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide2.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<h1>creating</h1>
+			          		<label>curriculum based workshops for schools and nurseries</label>
+<!-- 			          		<a class="slide-btn" href="#">learn more</a> -->
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide3.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info">
+			          		<h1>organising</h1>
+			          		<label>fun and informative animal education events for children</label>
+<!-- 			          		<a class="slide-btn" href="#">learn more</a> -->
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/spider.jpg" alt="">
+			           <div class="caption">
+			           	<div class="slide-text-info" >
+			          		<h1>providing</h1>
+			          		<label>the 'wow factor' at birthdays, weddings...</label>
+		          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!---- about ---->
+			<div id="about" class="about">
+				<div class="container">
+					<div class="header about-header text-center">
+						<h2>A Little Bit About Us</h2>
+<p>Zoo-Ed was an idea born out of passion for both animals and education. We believe that the best way to learn about the animal kingdom is to experience handling the animals for yourself.</p>
+<p>Our main aim at Zoo-Ed is to rescue and rehabilitate exotic animals. Our founding member David has been rescuing and rehabilitating exotic animals for around 15 years and between us we have and have a wealth of knowledge of all things animal related. We travel to schools, nurseries and other community events treating you to a truly unique handling experience. We guarantee you will be enthralled by our beautiful animals and it won’t take long before you fall in love with our wee hedgehog Pippa!</p>
+<p>Thank you for taking the time to visit our site and would love to hear from any school, community group, organisation or event organiser who would like us to visit and talk about our animals and the work we do.</p>	
+			</div>
+			</div>
+			<div id="team-animals" class="team">
+				<div class="container">
+					<div class="header about-header text-center">
+						<h2>Meet The Animals</h2>
+					</div>
+					<div class="team-member-grids">
+						<div class="team-member-grid">
+							<img src="images/pippa.jpg" title="Pippa" />
+							<div class="team-member-info bottom-t-info">
+								<span> </span>
+								<h3>Pippa the Pygemy Hedgehog</h3>
+								<p>We were given Pippa when her owner could no longer had time to care for her. Pippa was very shy when she arrived but thanks to Heather, she is slowly coming round and begining to enjoy human company again.</br></br></br>
+								</p>								
+							</div>
+						</div>
+						<div class="team-member-grid">
+							<div class="team-member-info bottom-t-info bottom-t-info-b">
+								<h3>Seamus the Rabbit</h3>
+								<p><!--Seamus was given to us when his owner moved back to Ireland.-->He is around 2 years old and is doing really well since being in our care. Seamus was quite nervous when he arrived (always checking out the escape routes!) but is settling down now and is possibly the sweetest rabbit we've ever met. He is a very gentle rabbit who loves nothing more than sitting around getting cuddles.</p>							
+
+							</div>
+							<span> </span>
+							<img src="images/seamus.jpg" title="Seamus" />
+						</div>
+						<div class="team-member-grid">
+							<img src="images/philip.jpg" title="Philip" />
+							<div class="team-member-info bottom-t-info">
+								<span> </span>
+								<h3>Philip the Guinea Pig</h3>
+								<p>Wee Philip is an absolute star! Philip is around one year old and came to us when his owner could no longer care for him. This little piggy demands plenty of love and affection. Oh yeah. And food is pretty high on his agenda too!</p>							
+							</div>
+						</div>
+						<div class="team-member-grid">
+							<div class="team-member-info bottom-t-info bottom-t-info-b">
+								<h3>Albert The Bearded Dragon</h3>
+								<p>Our Albert is just gorgeous inside and out.  Albert was cruelly abandoned outside a pet shop in the east end of the city.  Thankfully the pet shop owner found him relatively quickly as he wouldn't have survived long without his heat mat.  Such a friendly boy, we were shocked at who would've abandoned this once much loved pet.</p>							
+							</div>
+							<img src="images/albert.jpg" title="Albert" />
+						</div>		
+						<div class="team-member-grid">
+							<img src="images/molly.jpg" title="Molly" />
+							<div class="team-member-info bottom-t-info">
+								<span> </span>
+								<h3>Molly The Domestic Rat</h3>
+								<p> Wee Molly is our very own reptile specialist David's pet rat.  Molly loves being handled and is especially good with the children out on visits.</p>				
+							</div>
+						</div>										
+					</div>
+				</div>
+			</div>
+			
+			<div id="team" class="about">
+				<div class="container">
+					<div class="header about-header text-center">
+						<h2>Meet The Humans</h2>
+					</div>
+					<!---- About-grids ---->
+					<div class="about-grids">
+						<div class="col-md-4">
+							<div class="about-grid">
+								<img src="images/dave.jpg" title="name" />
+								<span class="t-icon1"> </span>
+								<div class="about-grid-info text-center">
+									<h3><!-- <a href="#"> -->David McCarg:<br/>Reptile Specialist<!-- </a> --></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="about-grid">
+								<img src="images/fiona.jpg" title="name" />
+								<span class="t-icon1"> </span>
+								<div class="about-grid-info text-center">
+									<h3><!-- <a href="#"> -->Fiona McCrindle:</br>Education Officer<!-- </a> --></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="about-grid">
+								<img src="images/heather.jpg" title="Heather Russel" />
+								<span class="t-icon2"> </span>
+								<div class="about-grid-info text-center">
+									<h3>Heather Russell:</br>Veterinary Bio Scientist</h3>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!---- About-grids ---->
+				</div>
+				
+			</div>
+
+			<div id="services" class="services">
+				<div class="container">
+					<div class="header services-header text-center">
+						<h2>What We Do</h2>
+						<!--<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>-->
+					</div>
+					<div class="service-grids">
+						<div class="col-md-6">
+							<div class="service-grid text-center">
+								<h3>Education Visits</h3>
+								<p>We will work to what best suits busy teaching timetables.  For schools we usually suggest a one and half hour visit (i.e. 10.30 – 12pm/1.15 – 2.45pm) as this allows time for all the children to interact with the animals (i.e. petting/feeding), investigate their habitat and write up any findings.</p>
+								<p>
+We understand that nurseries enjoy a freer learning community and suggest a forty minutes - one hour session for the younger children.
+All our school visits are underpinned by the Curriculum for Excellence (ACfE) and for younger children pre-birth to three.</p>
+<p>Our education visits are carried out by Fiona McCrindle (Bed HONS) who is a fully qualified and registered teacher and as such there is no requirement for the class teacher to stay during the visit.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-grid text-center">
+								<h3>Animal Therapy</h3>
+<p>The therapeutic benefits of animal handling are well documented and we at Zoo-Ed are lucky enough to be able to offer this service.</p>
+<p>We regularly attend nursing homes, supported living centre’s, hospices, hospitals, schools for the visually impaired and other special need units.</p>
+<p>Depending on the number and needs of the individuals we usually recommend a one – one and a half hour visit.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-grid text-center">
+								<h3>Special Occasions</h3>
+								<p>Our children's parties last for one hour and are jam packed with amazing animals, jokes, games and fast, fun animal facts.</p><p>We also offer a wedding package to keep the little one's entertained whilst you share a toast with the newly weds.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="service-grid text-center">
+								<h3>Comunity Events</h3>
+								<p>Our two hour petting zoo events are a great way to enhance your profile within the local community. We give everyone the chance to handle the animals and our experienced animal handler will also present fun, friendly and interactive demonstrations. We will talk about their species, habitats, diets, and life spans and for younger children we will focus more on movements and sounds, always making sure that the children can see the animals in action.</p>
+							</div>
+						</div>						
+						<div class="clearfix"> </div>
+					</div>
+					<!----//service-grids--->
+				</div>
+				
+			</div>
+ 
+			<!--- services --->
+			<!--- team --->
+
+							<div class="clearfix"> </div>
+
+			 
+			<!--- team --->
+			<!---- contact -->
+			<div id="contact" class="contact">
+				<div class="map">
+				<div class="contact-info">
+					<div class="container">
+						<div class="contact-grids text-center">
+							<h3>Get In Touch</h3>
+							<div class="contact-grid-left">
+								<!--<h4>Contact Us</h4>-->
+								<ul>
+									<li><span class="cal"> </span><label>Monday - Friday :</label><small>9:30 AM to 6:30 PM</small></li>
+									<!--<li><span class="pin"> </span><label>Address :</label><small>123 Some Street , London, UK, CP 123</small></li>-->
+									<li><span class="phone"> </span><label>Phone :</label><small>(+44) 07-973-212-338</small></li>
+									<!--<li><span class="fax"> </span><label>Fax :</label><small>(123) 984-1234</small></li>-->
+									<li><span class="mail"> </span><label>Email :</label><a href="mailto:info@zoo-ed.org?Subject=Enquiry">info@zoo-ed.org</a></li>
+								</ul>
+							</div>
+							<!--
+							<div class="col-md-7 contact-grid-right">
+								<h4>Leave Us A Message</h4>
+								<form>
+									<input type="text" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name:';}">
+									<input type="text" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email:';}">
+									<input type="text" value="Phone No:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone No:';}">
+									<textarea rows="2" cols="70" onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Message:';">Message:</textarea>
+									<input type="submit" value="SEND MESSAGE" />
+								</form>
+							</div>
+						-->
+							<div class="clearfix"> </div>
+						</div>
+						
+					</div>
+				</div>
+				</div>
+			</div> 
 		
-		
-	</div>
-</div>
-</body>
+			<!---- contact ---->
+			<div class="clearfix"> </div>
+			<!--- copy-right ---->
+			<div class="copy-right">
+				<div class="container">
+				<div class="copy-right-left">
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!-- 
+				<div class="copy-right-right">
+					<ul>
+						<li><a class="facebook" href="#"><span> </span></a></li>
+						<li><a class="twitter" href="#"><span> </span></a></li>
+						<li><a class="skype" href="#"><span> </span></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				-->
+				<div class="clearfix"> </div>
+
+			</div>
+			</div>
+	</body>
 </html>
+
