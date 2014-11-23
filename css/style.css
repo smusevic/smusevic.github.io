@@ -21,7 +21,8 @@ body a{
 	background: #F7F8F8;
 }
 .logo{
-	float: left;
+	/*float: left;*/
+	position: fixed;
 	/*margin-top: 0.2em; */
 
 }
@@ -35,10 +36,14 @@ body a{
 }
 
 .logo h1 {
-	font-size: 150px;
+	font-size: 100px;
 	padding: 0px;
 	margin: 0px;
 	position: 0 0 0 0;
+}
+.logo h1 cufon {
+	position: absolute;
+	top: -38px;
 }
 
 .logo320{
