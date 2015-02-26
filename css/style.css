@@ -5,12 +5,14 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
-  	font-family: 'Oswald', sans-serif;
+  	font-family: 'Open Sans',sans-serif;
     font-size: 100%;
   	 background: #FFf;
 }
-body a{
+body a {
+	color: #ffffff;
 	transition:0.5s all;
+	text-decoration: underline;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -21,9 +23,9 @@ body a{
 	background: #F7F8F8;
 }
 .logo{
-	/*float: left;*/
-	position: absolute;
-	/*margin-top: 0.2em; */
+	float: left;
+	/*position: absolute;*/
+	margin-top: 1.2em;
 
 }
 .logo a{	color: #303030;
@@ -36,6 +38,7 @@ body a{
 }
 
 .logo h1 {
+	font-family: 'Bangers';
 	font-size: 100px;
 	padding: 0px;
 	margin: 0px;
@@ -43,7 +46,7 @@ body a{
 }
 .logo h1 cufon {
 	position: absolute;
-	top: -38px;
+	/*top: -38px;*/
 }
 
 .logo320{
@@ -380,12 +383,12 @@ nav a#pull {
 }
 .slide-text-info h1{
 	font-size: 4.2em;
-	font-weight: 900;
+	/*font-weight: 900;*/
 	
 	padding: 0;
 	margin:0;
 	color: #FFF;
-	font-weight: 900;
+	
 }
 /*----*/
 .slide-text-info label{
@@ -442,12 +445,14 @@ div.slide-text-info {
 .about-grid{
 	background:url(../images/top-grid-info-bg-b.png);
 	transition:0.5s all;
+	margin:0 0 1em 0;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
-.about-grid:hover,.n-about-grid{
+/*.about-grid:hover,*/
+.n-about-grid{
 	background:url(../images/top-grid-info-bg-bl.png);
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -568,9 +573,13 @@ div.slide-text-info {
 	padding: 3em 0 5em 0;
 }
 .team-member-grid{
-	width:20%;
+/*
+	width:33%;
+	display: inline-block;
 	float:left;
+
 	background:url(../images/top-grid-info-bg-b.png);
+*/		
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -578,7 +587,7 @@ div.slide-text-info {
 	-ms-transition:0.5s all; 	
 }
 .team-member-grid:hover{
-	background:url(../images/top-grid-info-bg-bl.png);
+	/*background:url(../images/top-grid-info-bg-bl.png);*/
 }
 .team-member-grid img{
 	width:100%;
@@ -635,6 +644,7 @@ div.slide-text-info {
 }
 .team-member-grids{
 	padding:3em 0 0 0;
+	background:url(../images/top-grid-info-bg-b.png);
 }
 .team-head{
 	background:none;
@@ -850,7 +860,6 @@ div.slide-text-info {
 		margin: 1em auto 0;
 	}
 	.team-member-info p {
-		height: 130px;
 		overflow: hidden;
 	}
 	.bottom-t-info-b span {
@@ -892,7 +901,6 @@ div.slide-text-info {
 		margin: 1em auto 0;
 	}
 	.team-member-info p {
-		height: 68px;
 		overflow: hidden;
 	}
 	.bottom-t-info-b span {
@@ -963,6 +971,10 @@ div.slide-text-info {
 	}
 }
 @media(max-width:640px){
+	.logo h1 {
+		font-family: 'Bangers';
+		font-size: 60px;
+	}
 	.slide-text-info h1 {
 		font-size: 2.2em;
 	}
@@ -1058,6 +1070,10 @@ div.slide-text-info {
 	}
 }
 @media(max-width:480px){
+	.logo h1 {
+		font-family: 'Bangers';
+		font-size: 40px;
+	}
 	.slide-text-info h1 {
 		font-size: 1.2em;
 	}
