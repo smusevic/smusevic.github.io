@@ -23,7 +23,7 @@ body a {
 	background: #F7F8F8;
 }
 .logo{
-	float: left;
+	/*float: left;*/
 	/*position: absolute;*/
 	margin-top: 1.2em;
 
@@ -36,7 +36,10 @@ body a {
 .logo a:hover{
 	text-decoration:none;
 }
-
+.logo h3 {
+	margin-top: 0;
+	margin-bottom: 1em;	
+}
 .logo h1 {
 	font-family: 'Bangers';
 	font-size: 100px;
@@ -57,7 +60,7 @@ body a {
 	/*padding: 0.8em 0em;*/
 }
 .top-nav {
-	padding-left: em;
+	padding-top: 1em;
 }
 .top-nav ul li a{
 	color: #737373;
