@@ -575,6 +575,12 @@ div.slide-text-info {
 .team{
 	padding: 3em 0 5em 0;
 }
+#commitment p {
+	text-align: justify;
+}
+em {
+	text-decoration: underline;
+}
 .team-member-grid{
 /*
 	width:33%;
