@@ -19,6 +19,14 @@ body a {
 	-ms-transition:0.5s all;
 }
 /*-----start-header----*/
+#testimonials .about-grids .about-grid-info p {
+	color: #555555
+}
+
+#testimonials .about-grids .about-grid-info h5 {
+	font-style: italic;
+}
+
 .header{
 	background: #F7F8F8;
 }
